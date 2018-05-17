@@ -38,6 +38,7 @@ public class Producer implements CommandLineRunner {
 		System.out.println("Message was sent to the Queue");
 	}
 
+
 	public void send(String msg) {
 		this.jmsMessagingTemplate.convertAndSend(this.queue, msg);
 	}
